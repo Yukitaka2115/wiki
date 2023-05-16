@@ -3416,3 +3416,15 @@ Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: E
 2023-05-16 17:30:30.622 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 17:30:30.910 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
 2023-05-16 17:30:31.374 INFO  com.solaluna.wiki.WikiApplicationTests            :57   [32m                  [0;39m Started WikiApplicationTests in 1.503 seconds (process running for 2.118)
+2023-05-16 18:16:16.427 INFO  com.solaluna.wiki.WikiApplicationTests            :51   [32m                  [0;39m Starting WikiApplicationTests using Java 19.0.2 with PID 28372 (started by 41572 in C:\Users\41572\Desktop\git\wiki\wiki)
+2023-05-16 18:16:16.429 INFO  com.solaluna.wiki.WikiApplicationTests            :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-16 18:16:16.914 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 18:16:16.915 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-16 18:16:17.216 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 18:16:17.694 INFO  com.solaluna.wiki.WikiApplicationTests            :57   [32m                  [0;39m Started WikiApplicationTests in 1.582 seconds (process running for 2.392)
+2023-05-16 18:16:18.039 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-16 18:16:18.040 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-16 18:16:18.321 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c79c5ec
+2023-05-16 18:16:18.324 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-16 18:16:18.360 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-16 18:16:18.363 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.

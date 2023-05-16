@@ -26,33 +26,33 @@ public class CRUDController {
         chara.setInfo(info);
         service.save(chara);
         return Result.success(chara);
-    }
+    }//1
 
-    @DeleteMapping("/deleteChara/{id}")
-    public Result delete(@PathVariable int id){
+    @DeleteMapping("/deleteChara")
+    public Result delete(@RequestParam("id") int id){
         service.removeById(id);
         return Result.success("删除成功",id);
-    }
+    }//1
 
-    @PutMapping("/update/{id}")
-    public Result update(@PathVariable int id, @RequestBody Chara charaparam){
+    @PutMapping("/update")
+    public Result update(@RequestParam("id") int id, @RequestBody Chara charaparam){
         Chara chara = service.getById(id);
         if(chara == null){
-            return Result.fail(404,"查询失败");
+            return Result.fail(406,"查询失败");
         }
         chara.setChara(charaparam.getChara());
         chara.setCast(charaparam.getCast());
         chara.setInfo(charaparam.getInfo());
         service.updateById(chara);
         return Result.success("更新成功", chara);
-    }
+    }//1
 
-    @GetMapping("/getChara/{id}")
-    public Result getChara(@PathVariable int id) {
+    @GetMapping("/getChara")
+    public Result getChara(@RequestParam("id")  int id) {
         Chara chara = service.getById(id);
         if (chara == null) {
-            return Result.fail(404, "数据不存在");
+            return Result.fail(406, "数据不存在");
         }
         return Result.success(chara);
-    }
+    }//1
 }
