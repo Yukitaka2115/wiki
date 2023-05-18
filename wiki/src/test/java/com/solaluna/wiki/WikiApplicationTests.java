@@ -1,6 +1,5 @@
 package com.solaluna.wiki;
 
-import com.solaluna.wiki.pojo.Result;
 import com.solaluna.wiki.service.CharaService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -154,7 +154,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:48:57.708 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 12:48:57.768 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 12:48:57.770 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 604 ms
-2023-05-16 12:48:57.885 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 12:48:57.885 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 12:48:58.168 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 12:48:58.178 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 12:48:58.183 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.355 seconds (process running for 1.676)
@@ -174,7 +174,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:54:26.985 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 12:54:27.031 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 12:54:27.031 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 601 ms
-2023-05-16 12:54:27.146 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 12:54:27.146 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 12:54:27.422 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 12:54:27.432 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 12:54:27.437 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.325 seconds (process running for 1.652)
@@ -193,7 +193,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:55:34.074 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 12:55:34.122 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 12:55:34.123 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 614 ms
-2023-05-16 12:55:34.248 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 12:55:34.248 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 12:55:34.534 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 12:55:34.551 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 12:55:34.556 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.368 seconds (process running for 1.686)
@@ -270,7 +270,7 @@ info )  VALUES  ( 0,
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
 	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
-	at com.solaluna.wiki.controller.CRUDController.add(TestController.java:29)
+	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -381,7 +381,7 @@ info )  VALUES  ( 0,
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
 	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
-	at com.solaluna.wiki.controller.CRUDController.add(TestController.java:29)
+	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -492,7 +492,7 @@ info )  VALUES  ( 0,
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
 	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
-	at com.solaluna.wiki.controller.CRUDController.add(TestController.java:29)
+	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -553,7 +553,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:10:02.388 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:10:02.434 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:10:02.435 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 618 ms
-2023-05-16 15:10:02.549 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 15:10:02.549 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 15:10:02.808 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:10:02.825 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:10:02.830 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.336 seconds (process running for 1.692)
@@ -628,7 +628,7 @@ info )  VALUES  ( 0,
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
 	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
-	at com.solaluna.wiki.controller.CRUDController.add(TestController.java:29)
+	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -689,7 +689,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:15:59.658 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:15:59.703 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:15:59.704 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 581 ms
-2023-05-16 15:15:59.818 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 15:15:59.818 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 15:16:00.075 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:16:00.089 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:16:00.094 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.285 seconds (process running for 1.592)
@@ -714,7 +714,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:34:55.927 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:34:55.972 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:34:55.973 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 580 ms
-2023-05-16 15:34:56.094 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 15:34:56.094 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 15:34:56.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:34:56.375 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:34:56.380 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.3 seconds (process running for 1.604)
@@ -739,7 +739,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:47:05.222 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:47:05.268 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:47:05.269 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 595 ms
-2023-05-16 15:47:05.380 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 15:47:05.380 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 15:47:05.653 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:47:05.672 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:47:05.676 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.317 seconds (process running for 1.621)
@@ -764,7 +764,7 @@ info )  VALUES  ( 0,
 2023-05-16 16:42:16.423 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 16:42:16.473 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 16:42:16.473 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 568 ms
-2023-05-16 16:42:16.593 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 16:42:16.593 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 16:42:16.869 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 16:42:16.880 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 16:42:16.884 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.291 seconds (process running for 1.593)
@@ -794,7 +794,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:16:40.481 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 17:16:40.528 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 17:16:40.529 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 580 ms
-2023-05-16 17:16:40.645 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 17:16:40.645 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 17:16:40.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 17:16:40.926 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 17:16:40.931 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.292 seconds (process running for 1.587)
@@ -815,7 +815,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:18:48.072 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 17:18:48.118 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 17:18:48.119 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 569 ms
-2023-05-16 17:18:48.231 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 17:18:48.231 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 17:18:48.491 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 17:18:48.501 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 17:18:48.505 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.268 seconds (process running for 1.562)
@@ -834,7 +834,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:16:32.628 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:16:32.684 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:16:32.685 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 590 ms
-2023-05-16 18:16:32.810 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 18:16:32.810 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 18:16:33.097 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:16:33.109 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:16:33.115 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.358 seconds (process running for 1.688)
@@ -859,7 +859,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:42:20.981 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:42:21.033 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:42:21.033 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 589 ms
-2023-05-16 18:42:21.152 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 18:42:21.152 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 18:42:21.426 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:42:21.436 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:42:21.441 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.319 seconds (process running for 1.618)
@@ -884,7 +884,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:47:26.210 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:47:26.256 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:47:26.257 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 581 ms
-2023-05-16 18:47:26.375 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 18:47:26.375 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 18:47:26.648 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:47:26.658 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:47:26.663 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.299 seconds (process running for 1.677)
@@ -909,7 +909,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:49:41.874 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:49:41.922 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:49:41.923 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 570 ms
-2023-05-16 18:49:42.035 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.Chara"
+2023-05-16 18:49:42.035 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
 2023-05-16 18:49:42.305 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:49:42.319 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:49:42.324 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.292 seconds (process running for 1.623)
@@ -925,3 +925,79 @@ info )  VALUES  ( 0,
 2023-05-16 18:50:14.435 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
 2023-05-16 18:50:43.852 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
 2023-05-16 18:50:43.856 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 15:25:36.128 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 22396 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 15:25:36.130 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 15:25:36.547 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:25:36.548 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:25:36.548 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 15:25:36.762 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 15:25:36.770 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 15:25:36.771 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 15:25:36.772 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 15:25:36.837 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 15:25:36.838 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 681 ms
+2023-05-18 15:25:36.972 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 15:25:37.082 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 15:25:37.277 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 15:25:37.288 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 15:25:37.293 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.493 seconds (process running for 1.903)
+2023-05-18 15:25:37.294 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 15:25:37.294 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 15:26:23.812 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 15:26:23.813 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 15:26:23.814 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-18 15:36:50.592 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 6864 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 15:36:50.594 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 15:36:51.150 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 15:36:51.157 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 15:36:51.158 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 15:36:51.158 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 15:36:51.206 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 15:36:51.206 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 588 ms
+2023-05-18 15:36:51.328 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 15:36:51.429 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 15:36:51.658 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 15:36:51.669 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 15:36:51.675 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.378 seconds (process running for 1.695)
+2023-05-18 15:36:51.677 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 15:36:51.677 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 15:37:44.993 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 15:37:44.994 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 15:37:44.994 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-05-18 15:37:45.006 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2023-05-18 15:37:50.182 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 15:37:50.182 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 15:37:50.388 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@71d847ed
+2023-05-18 15:37:50.390 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 15:38:31.964 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 15:38:31.970 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 15:53:13.990 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 20528 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 15:53:13.992 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 15:53:14.572 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 15:53:14.580 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 15:53:14.580 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 15:53:14.580 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 15:53:14.626 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 15:53:14.627 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 611 ms
+2023-05-18 15:53:14.745 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 15:53:14.833 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 15:53:15.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 15:53:15.048 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 15:53:15.053 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.348 seconds (process running for 1.658)
+2023-05-18 15:53:15.055 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 15:53:15.055 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 15:53:22.526 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 15:53:22.526 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 15:53:22.527 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-18 15:53:22.608 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 15:53:22.608 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 15:53:22.784 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b239e90
+2023-05-18 15:53:22.785 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 15:54:31.886 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 15:54:31.890 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.

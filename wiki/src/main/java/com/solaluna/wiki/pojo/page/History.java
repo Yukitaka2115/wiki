@@ -1,4 +1,4 @@
-package com.solaluna.wiki.pojo;
+package com.solaluna.wiki.pojo.page;
 
 import lombok.Data;
 
