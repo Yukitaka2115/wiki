@@ -1027,3 +1027,424 @@ info )  VALUES  ( 0,
 2023-05-18 16:07:36.689 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
 2023-05-18 16:07:36.855 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@8d35f5c
 2023-05-18 16:07:36.857 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 17:13:38.298 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 17:13:38.304 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 17:13:41.977 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 10028 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:13:41.979 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:13:42.353 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:13:42.354 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:13:42.354 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:13:42.560 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:13:42.566 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:13:42.567 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:13:42.568 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:13:42.621 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:13:42.622 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 615 ms
+2023-05-18 17:13:42.737 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:13:42.831 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:13:43.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:13:43.044 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 17:13:43.048 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.37 seconds (process running for 1.671)
+2023-05-18 17:13:43.051 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 17:13:43.051 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 17:13:59.154 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 17:13:59.154 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 17:13:59.155 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-18 17:13:59.242 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m                  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @7e6f74c
+2023-05-18 17:13:59.251 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 17:13:59.252 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 17:13:59.417 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6efe12e1
+2023-05-18 17:13:59.418 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 17:13:59.450 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: base64-encoded secret key cannot be null or empty.] with root cause
+java.lang.IllegalArgumentException: base64-encoded secret key cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:97)
+	at com.solaluna.wiki.pojo.user.util.JwtUtil.createToken(JwtUtil.java:43)
+	at com.solaluna.wiki.controller.UserController.login(UserController.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-18 17:15:40.236 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 17:15:40.240 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 17:15:42.444 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 24728 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:15:42.446 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:15:42.787 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:15:42.787 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:15:42.788 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:15:42.998 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:15:43.010 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:15:43.011 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:15:43.011 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:15:43.058 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:15:43.059 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 587 ms
+2023-05-18 17:15:43.176 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:15:43.270 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:15:43.472 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:15:43.484 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 17:15:43.488 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.332 seconds (process running for 1.632)
+2023-05-18 17:15:43.490 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 17:15:43.490 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 17:17:53.069 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 4504 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:17:53.071 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:17:53.604 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:17:53.617 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:17:53.617 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:17:53.617 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:17:53.667 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:17:53.668 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 573 ms
+2023-05-18 17:17:53.786 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:17:53.873 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:17:53.896 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'jwtUtil': Error creating bean with name 'jwtUtil': Could not bind properties to 'JwtUtil' : prefix=Yukitaka.jwt, ignoreInvalidFields=false, ignoreUnknownFields=true
+2023-05-18 17:17:53.898 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-05-18 17:17:53.906 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-18 17:17:53.918 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'Yukitaka.jwt' is not valid:
+
+    Invalid characters: 'Y'
+    Bean: userController
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'Yukitaka.jwt' so that it conforms to the canonical names requirements.
+
+2023-05-18 17:18:23.252 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 3040 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:18:23.253 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:18:23.785 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:18:23.791 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:18:23.792 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:18:23.792 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:18:23.839 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:18:23.840 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 560 ms
+2023-05-18 17:18:23.955 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:18:24.050 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:18:24.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:18:24.252 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 17:18:24.258 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.293 seconds (process running for 1.599)
+2023-05-18 17:18:24.259 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 17:18:24.259 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 17:18:29.317 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 17:18:29.317 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 17:18:29.318 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-18 17:18:29.400 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m                  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @7e6f74c
+2023-05-18 17:18:29.409 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 17:18:29.409 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 17:18:29.573 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@361f784d
+2023-05-18 17:18:29.575 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 17:18:29.607 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+	at com.solaluna.wiki.pojo.user.util.JwtUtil.createToken(JwtUtil.java:43)
+	at com.solaluna.wiki.controller.UserController.login(UserController.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-18 17:19:16.469 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 17:19:16.473 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 17:19:44.002 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 23188 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:19:44.003 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:19:44.537 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:19:44.543 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:19:44.544 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:19:44.544 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:19:44.596 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:19:44.597 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 570 ms
+2023-05-18 17:19:44.712 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:19:44.808 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:19:45.005 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:19:45.016 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 17:19:45.021 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.306 seconds (process running for 1.607)
+2023-05-18 17:19:45.022 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 17:19:45.024 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 17:19:48.751 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 17:19:48.751 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 17:19:48.753 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2023-05-18 17:19:48.836 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m                  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @3fc2959f
+2023-05-18 17:19:48.845 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 17:19:48.845 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 17:19:49.009 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@16bbe5cc
+2023-05-18 17:19:49.011 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 17:19:49.043 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+	at com.solaluna.wiki.pojo.user.util.JwtUtil.createToken(JwtUtil.java:43)
+	at com.solaluna.wiki.controller.UserController.login(UserController.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-18 17:20:31.772 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 17:20:31.776 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 17:20:40.000 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 5276 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:20:40.001 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:20:40.333 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:20:40.333 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:20:40.334 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:20:40.559 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:20:40.565 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:20:40.566 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:20:40.566 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:20:40.615 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:20:40.615 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 589 ms
+2023-05-18 17:20:40.741 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:20:40.833 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:20:41.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:20:41.044 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 17:20:41.049 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.331 seconds (process running for 1.643)
+2023-05-18 17:20:41.051 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 17:20:41.051 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 17:20:44.677 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 17:20:44.677 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 17:20:44.678 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-18 17:20:44.762 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m                  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @3fc2959f
+2023-05-18 17:20:44.772 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 17:20:44.772 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 17:20:44.934 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@65bac6f8
+2023-05-18 17:20:44.936 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 17:20:44.967 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+	at com.solaluna.wiki.pojo.user.util.JwtUtil.createToken(JwtUtil.java:43)
+	at com.solaluna.wiki.controller.UserController.login(UserController.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-18 17:23:15.270 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 17:23:15.274 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-18 17:23:18.856 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 12308 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-18 17:23:18.858 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 17:23:19.194 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:23:19.194 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:23:19.195 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-18 17:23:19.419 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-18 17:23:19.425 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:23:19.426 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 17:23:19.426 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-18 17:23:19.474 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 17:23:19.474 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 591 ms
+2023-05-18 17:23:19.588 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:23:19.681 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-18 17:23:19.888 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-18 17:23:19.899 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-18 17:23:19.904 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.336 seconds (process running for 1.631)
+2023-05-18 17:23:19.906 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-18 17:23:19.906 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-18 17:23:24.724 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 17:23:24.724 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 17:23:24.725 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-05-18 17:23:24.810 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m                  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @1f2586d6
+2023-05-18 17:23:24.820 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-18 17:23:24.820 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-18 17:23:24.983 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2907adcc
+2023-05-18 17:23:24.985 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-18 17:23:42.873 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-18 17:23:42.877 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.

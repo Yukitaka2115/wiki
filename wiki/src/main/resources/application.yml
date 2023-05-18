@@ -15,6 +15,11 @@ spring:
 #    name: defaultDataSource
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
+yukitaka:
+  jwt:
+    secret: Yukitaka1116
+    expire: 21600
+    header: Authorization
 
 
 

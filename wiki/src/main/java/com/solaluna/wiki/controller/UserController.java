@@ -5,6 +5,7 @@ import com.solaluna.wiki.pojo.Result;
 import com.solaluna.wiki.pojo.user.User;
 import com.solaluna.wiki.pojo.user.params.LoginParams;
 import com.solaluna.wiki.pojo.user.params.RegisterParams;
+import com.solaluna.wiki.pojo.user.util.JwtUtil;
 import com.solaluna.wiki.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @Autowired
     UserService userService;
+    @Autowired
+    JwtUtil jwtUtil;
     @GetMapping("/user/test")
     public Result test(){
         return Result.success("114514");
@@ -39,7 +42,8 @@ public class UserController {
         user.setUsername(username);
         user.setPwd(pwd);
         userService.save(user);
-        return Result.success("user");
+        String token = jwtUtil.createToken(user.getId());
+        return Result.success(token);
     }//1
 
     @PostMapping("/user/login")
@@ -57,6 +61,7 @@ public class UserController {
         if (user == null) {
             return Result.fail(404,"登陆信息错误");
         }
-        return Result.success("user");
+        String token = jwtUtil.createToken(user.getId());
+        return Result.success(token);
     }//1
 }
