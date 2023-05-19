@@ -1,4 +1,4 @@
-package com.solaluna.wiki.pojo.user.util;
+package com.solaluna.wiki.pojo.util;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;

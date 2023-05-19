@@ -5,17 +5,16 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-
 @Data
-@TableName("chara")
-public class Chara {
+@TableName("group")
+public class Group {
     @TableId(type = IdType.AUTO)
     private int id;
     private String chara;
-    private String cast;
-    private String info;
+    private String grade;
+    private String group;
 
-    public Chara(String chara, String cast, String info) {
+    public Group(String chara, String grade, String group) {
+
     }
 }
-

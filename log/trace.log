@@ -72,7 +72,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 	... 42 common frames omitted
 2023-05-16 11:15:48.908 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 22868 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 11:15:48.910 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 11:15:49.204 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 11:15:49.204 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 11:15:49.204 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 11:15:49.396 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 11:15:49.403 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -146,7 +146,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 	... 42 common frames omitted
 2023-05-16 12:48:57.137 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 24932 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 12:48:57.139 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 12:48:57.486 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 12:48:57.486 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 12:48:57.487 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 12:48:57.699 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 12:48:57.707 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -154,7 +154,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:48:57.708 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 12:48:57.768 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 12:48:57.770 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 604 ms
-2023-05-16 12:48:57.885 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 12:48:57.885 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 12:48:58.168 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 12:48:58.178 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 12:48:58.183 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.355 seconds (process running for 1.676)
@@ -166,7 +166,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:51:12.505 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
 2023-05-16 12:54:26.403 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 8488 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 12:54:26.404 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 12:54:26.758 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 12:54:26.758 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 12:54:26.759 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 12:54:26.978 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 12:54:26.984 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -174,7 +174,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:54:26.985 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 12:54:27.031 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 12:54:27.031 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 601 ms
-2023-05-16 12:54:27.146 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 12:54:27.146 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 12:54:27.422 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 12:54:27.432 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 12:54:27.437 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.325 seconds (process running for 1.652)
@@ -185,7 +185,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:54:33.614 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
 2023-05-16 12:55:33.478 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 14324 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 12:55:33.480 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 12:55:33.831 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 12:55:33.831 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 12:55:33.831 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 12:55:34.067 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 12:55:34.073 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -193,7 +193,7 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:55:34.074 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 12:55:34.122 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 12:55:34.123 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 614 ms
-2023-05-16 12:55:34.248 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 12:55:34.248 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 12:55:34.534 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 12:55:34.551 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 12:55:34.556 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.368 seconds (process running for 1.686)
@@ -210,24 +210,24 @@ Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or '
 2023-05-16 12:57:24.422 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
 2023-05-16 12:57:24.471 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ### The error may exist in com/solaluna/wiki/mapper/CharaMapper.java (best guess)
-### The error may involve com.solaluna.wiki.mapper.CharaMapper.insert-Inline
+### The error may involve com.solaluna.wiki.mapper.PageMapper.insert-Inline
 ### The error occurred while setting parameters
-### SQL: INSERT INTO character  ( id, chara, cast, info )  VALUES  ( ?, ?, ?, ? )
+### SQL: INSERT INTO character  ( id, page, cast, info )  VALUES  ( ?, ?, ?, ? )
 ### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ; bad SQL grammar []] with root cause
 java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
@@ -269,7 +269,7 @@ info )  VALUES  ( 0,
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
 	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -321,24 +321,24 @@ info )  VALUES  ( 0,
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 2023-05-16 12:58:09.465 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ### The error may exist in com/solaluna/wiki/mapper/CharaMapper.java (best guess)
-### The error may involve com.solaluna.wiki.mapper.CharaMapper.insert-Inline
+### The error may involve com.solaluna.wiki.mapper.PageMapper.insert-Inline
 ### The error occurred while setting parameters
-### SQL: INSERT INTO character  ( id, chara, cast, info )  VALUES  ( ?, ?, ?, ? )
+### SQL: INSERT INTO character  ( id, page, cast, info )  VALUES  ( ?, ?, ?, ? )
 ### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ; bad SQL grammar []] with root cause
 java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
@@ -380,7 +380,7 @@ info )  VALUES  ( 0,
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
 	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -432,24 +432,24 @@ info )  VALUES  ( 0,
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 2023-05-16 15:08:12.861 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ### The error may exist in com/solaluna/wiki/mapper/CharaMapper.java (best guess)
-### The error may involve com.solaluna.wiki.mapper.CharaMapper.insert-Inline
+### The error may involve com.solaluna.wiki.mapper.PageMapper.insert-Inline
 ### The error occurred while setting parameters
-### SQL: INSERT INTO character  ( id, chara, cast, info )  VALUES  ( ?, ?, ?, ? )
+### SQL: INSERT INTO character  ( id, page, cast, info )  VALUES  ( ?, ?, ?, ? )
 ### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ; bad SQL grammar []] with root cause
 java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
@@ -491,7 +491,7 @@ info )  VALUES  ( 0,
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
 	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -545,7 +545,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:09:56.512 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 15:10:01.790 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 364 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 15:10:01.792 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 15:10:02.164 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 15:10:02.164 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 15:10:02.164 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 15:10:02.380 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 15:10:02.387 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -553,7 +553,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:10:02.388 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:10:02.434 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:10:02.435 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 618 ms
-2023-05-16 15:10:02.549 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 15:10:02.549 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 15:10:02.808 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:10:02.825 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:10:02.830 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.336 seconds (process running for 1.692)
@@ -568,24 +568,24 @@ info )  VALUES  ( 0,
 2023-05-16 15:10:30.463 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
 2023-05-16 15:10:30.514 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ### The error may exist in com/solaluna/wiki/mapper/CharaMapper.java (best guess)
-### The error may involve com.solaluna.wiki.mapper.CharaMapper.insert-Inline
+### The error may involve com.solaluna.wiki.mapper.PageMapper.insert-Inline
 ### The error occurred while setting parameters
-### SQL: INSERT INTO character  ( id, chara, cast, info )  VALUES  ( ?, ?, ?, ? )
+### SQL: INSERT INTO character  ( id, page, cast, info )  VALUES  ( ?, ?, ?, ? )
 ### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
 '小林爱香' at line 1
 ; bad SQL grammar []] with root cause
 java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character  ( id,
-chara,
+page,
 cast,
 info )  VALUES  ( 0,
 '津岛善子',
@@ -627,7 +627,7 @@ info )  VALUES  ( 0,
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.solaluna.wiki.service.impl.CharaServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
 	at com.solaluna.wiki.controller.PageController.add(TestController.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -681,7 +681,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:15:55.947 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 15:15:59.096 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 23204 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 15:15:59.097 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 15:15:59.427 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 15:15:59.427 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 15:15:59.428 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 15:15:59.650 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 15:15:59.657 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -689,7 +689,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:15:59.658 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:15:59.703 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:15:59.704 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 581 ms
-2023-05-16 15:15:59.818 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 15:15:59.818 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 15:16:00.075 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:16:00.089 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:16:00.094 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.285 seconds (process running for 1.592)
@@ -706,7 +706,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:24:19.459 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 15:34:55.366 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 26984 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 15:34:55.367 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 15:34:55.701 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 15:34:55.701 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 15:34:55.701 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 15:34:55.919 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 15:34:55.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -714,7 +714,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:34:55.927 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:34:55.972 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:34:55.973 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 580 ms
-2023-05-16 15:34:56.094 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 15:34:56.094 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 15:34:56.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:34:56.375 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:34:56.380 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.3 seconds (process running for 1.604)
@@ -731,7 +731,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:47:00.805 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 15:47:04.645 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 9352 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 15:47:04.649 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 15:47:04.984 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 15:47:04.984 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 15:47:04.984 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 15:47:05.209 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 15:47:05.216 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -739,7 +739,7 @@ info )  VALUES  ( 0,
 2023-05-16 15:47:05.222 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 15:47:05.268 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 15:47:05.269 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 595 ms
-2023-05-16 15:47:05.380 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 15:47:05.380 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 15:47:05.653 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 15:47:05.672 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 15:47:05.676 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.317 seconds (process running for 1.621)
@@ -756,7 +756,7 @@ info )  VALUES  ( 0,
 2023-05-16 16:42:09.402 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 16:42:15.878 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 6956 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 16:42:15.880 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 16:42:16.202 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 16:42:16.202 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 16:42:16.202 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 16:42:16.415 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 16:42:16.422 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -764,7 +764,7 @@ info )  VALUES  ( 0,
 2023-05-16 16:42:16.423 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 16:42:16.473 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 16:42:16.473 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 568 ms
-2023-05-16 16:42:16.593 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 16:42:16.593 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 16:42:16.869 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 16:42:16.880 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 16:42:16.884 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.291 seconds (process running for 1.593)
@@ -786,7 +786,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:16:37.015 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 17:16:39.923 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 23280 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 17:16:39.924 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 17:16:40.251 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 17:16:40.251 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 17:16:40.251 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 17:16:40.475 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 17:16:40.479 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -794,7 +794,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:16:40.481 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 17:16:40.528 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 17:16:40.529 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 580 ms
-2023-05-16 17:16:40.645 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 17:16:40.645 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 17:16:40.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 17:16:40.926 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 17:16:40.931 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.292 seconds (process running for 1.587)
@@ -807,7 +807,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:17:44.044 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
 2023-05-16 17:18:47.523 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 27088 (C:\Users\41572\IdeaProjects\wiki\wiki\target\classes started by 41572 in C:\Users\41572\IdeaProjects\wiki)
 2023-05-16 17:18:47.525 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 17:18:47.848 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 17:18:47.848 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 17:18:47.849 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 17:18:48.064 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 17:18:48.070 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -815,7 +815,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:18:48.072 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 17:18:48.118 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 17:18:48.119 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 569 ms
-2023-05-16 17:18:48.231 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 17:18:48.231 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 17:18:48.491 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 17:18:48.501 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 17:18:48.505 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.268 seconds (process running for 1.562)
@@ -826,7 +826,7 @@ info )  VALUES  ( 0,
 2023-05-16 17:18:51.739 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
 2023-05-16 18:16:32.067 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 20452 (C:\Users\41572\Desktop\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\git\wiki)
 2023-05-16 18:16:32.069 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 18:16:32.408 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 18:16:32.408 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 18:16:32.408 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 18:16:32.615 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 18:16:32.628 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -834,7 +834,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:16:32.628 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:16:32.684 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:16:32.685 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 590 ms
-2023-05-16 18:16:32.810 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 18:16:32.810 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 18:16:33.097 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:16:33.109 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:16:33.115 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.358 seconds (process running for 1.688)
@@ -851,7 +851,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:42:18.084 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 18:42:20.416 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 18980 (C:\Users\41572\Desktop\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\git\wiki)
 2023-05-16 18:42:20.418 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 18:42:20.760 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 18:42:20.760 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 18:42:20.761 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 18:42:20.973 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 18:42:20.980 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -859,7 +859,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:42:20.981 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:42:21.033 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:42:21.033 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 589 ms
-2023-05-16 18:42:21.152 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 18:42:21.152 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 18:42:21.426 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:42:21.436 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:42:21.441 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.319 seconds (process running for 1.618)
@@ -876,7 +876,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:47:22.709 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 18:47:25.648 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 14852 (C:\Users\41572\Desktop\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\git\wiki)
 2023-05-16 18:47:25.650 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 18:47:25.980 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 18:47:25.980 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 18:47:25.980 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 18:47:26.199 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 18:47:26.205 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -884,7 +884,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:47:26.210 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:47:26.256 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:47:26.257 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 581 ms
-2023-05-16 18:47:26.375 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 18:47:26.375 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 18:47:26.648 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:47:26.658 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:47:26.663 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.299 seconds (process running for 1.677)
@@ -901,7 +901,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:49:38.403 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-16 18:49:41.326 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 5084 (C:\Users\41572\Desktop\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\git\wiki)
 2023-05-16 18:49:41.328 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-16 18:49:41.648 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-16 18:49:41.648 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-16 18:49:41.648 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-16 18:49:41.866 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
 2023-05-16 18:49:41.872 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
@@ -909,7 +909,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:49:41.874 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-16 18:49:41.922 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-16 18:49:41.923 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 570 ms
-2023-05-16 18:49:42.035 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-16 18:49:42.035 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-16 18:49:42.305 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-16 18:49:42.319 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
 2023-05-16 18:49:42.324 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.292 seconds (process running for 1.623)
@@ -927,7 +927,7 @@ info )  VALUES  ( 0,
 2023-05-16 18:50:43.856 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 15:25:36.128 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 22396 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 15:25:36.130 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 15:25:36.547 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:25:36.547 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 15:25:36.548 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 15:25:36.548 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 15:25:36.762 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -936,7 +936,7 @@ info )  VALUES  ( 0,
 2023-05-18 15:25:36.772 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 15:25:36.837 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 15:25:36.838 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 681 ms
-2023-05-18 15:25:36.972 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 15:25:36.972 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 15:25:37.082 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 15:25:37.277 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 15:25:37.288 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -948,7 +948,7 @@ info )  VALUES  ( 0,
 2023-05-18 15:26:23.814 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
 2023-05-18 15:36:50.592 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 6864 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 15:36:50.594 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 15:36:50.935 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 15:36:51.150 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -957,7 +957,7 @@ info )  VALUES  ( 0,
 2023-05-18 15:36:51.158 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 15:36:51.206 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 15:36:51.206 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 588 ms
-2023-05-18 15:36:51.328 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 15:36:51.328 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 15:36:51.429 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 15:36:51.658 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 15:36:51.669 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -976,7 +976,7 @@ info )  VALUES  ( 0,
 2023-05-18 15:38:31.970 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 15:53:13.990 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 20528 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 15:53:13.992 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 15:53:14.352 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 15:53:14.572 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -985,7 +985,7 @@ info )  VALUES  ( 0,
 2023-05-18 15:53:14.580 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 15:53:14.626 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 15:53:14.627 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 611 ms
-2023-05-18 15:53:14.745 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 15:53:14.745 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 15:53:14.833 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 15:53:15.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 15:53:15.048 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1003,7 +1003,7 @@ info )  VALUES  ( 0,
 2023-05-18 15:54:31.890 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 16:07:29.171 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 23664 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 16:07:29.173 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 16:07:29.565 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 16:07:29.565 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 16:07:29.565 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 16:07:29.566 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 16:07:29.785 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1012,7 +1012,7 @@ info )  VALUES  ( 0,
 2023-05-18 16:07:29.793 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 16:07:29.841 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 16:07:29.841 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 643 ms
-2023-05-18 16:07:29.956 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 16:07:29.956 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 16:07:30.043 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 16:07:30.241 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 16:07:30.252 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1031,7 +1031,7 @@ info )  VALUES  ( 0,
 2023-05-18 17:13:38.304 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 17:13:41.977 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 10028 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:13:41.979 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:13:42.353 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:13:42.353 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:13:42.354 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:13:42.354 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:13:42.560 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1040,7 +1040,7 @@ info )  VALUES  ( 0,
 2023-05-18 17:13:42.568 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:13:42.621 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:13:42.622 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 615 ms
-2023-05-18 17:13:42.737 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:13:42.737 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:13:42.831 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:13:43.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 17:13:43.044 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1113,7 +1113,7 @@ java.lang.IllegalArgumentException: base64-encoded secret key cannot be null or 
 2023-05-18 17:15:40.240 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 17:15:42.444 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 24728 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:15:42.446 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:15:42.787 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:15:42.787 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:15:42.787 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:15:42.788 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:15:42.998 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1122,7 +1122,7 @@ java.lang.IllegalArgumentException: base64-encoded secret key cannot be null or 
 2023-05-18 17:15:43.011 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:15:43.058 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:15:43.059 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 587 ms
-2023-05-18 17:15:43.176 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:15:43.176 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:15:43.270 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:15:43.472 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 17:15:43.484 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1131,7 +1131,7 @@ java.lang.IllegalArgumentException: base64-encoded secret key cannot be null or 
 2023-05-18 17:15:43.490 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
 2023-05-18 17:17:53.069 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 4504 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:17:53.071 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:17:53.399 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:17:53.604 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1140,7 +1140,7 @@ java.lang.IllegalArgumentException: base64-encoded secret key cannot be null or 
 2023-05-18 17:17:53.617 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:17:53.667 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:17:53.668 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 573 ms
-2023-05-18 17:17:53.786 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:17:53.786 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:17:53.873 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:17:53.896 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'jwtUtil': Error creating bean with name 'jwtUtil': Could not bind properties to 'JwtUtil' : prefix=Yukitaka.jwt, ignoreInvalidFields=false, ignoreUnknownFields=true
 2023-05-18 17:17:53.898 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
@@ -1167,7 +1167,7 @@ Modify 'Yukitaka.jwt' so that it conforms to the canonical names requirements.
 
 2023-05-18 17:18:23.252 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 3040 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:18:23.253 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:18:23.577 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:18:23.785 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1176,7 +1176,7 @@ Modify 'Yukitaka.jwt' so that it conforms to the canonical names requirements.
 2023-05-18 17:18:23.792 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:18:23.839 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:18:23.840 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 560 ms
-2023-05-18 17:18:23.955 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:18:23.955 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:18:24.050 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:18:24.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 17:18:24.252 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1252,7 +1252,7 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:19:16.473 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 17:19:44.002 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 23188 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:19:44.003 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:19:44.329 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:19:44.537 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1261,7 +1261,7 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:19:44.544 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:19:44.596 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:19:44.597 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 570 ms
-2023-05-18 17:19:44.712 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:19:44.712 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:19:44.808 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:19:45.005 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 17:19:45.016 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1337,7 +1337,7 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:20:31.776 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 17:20:40.000 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 5276 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:20:40.001 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:20:40.333 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:20:40.333 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:20:40.333 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:20:40.334 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:20:40.559 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1346,7 +1346,7 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:20:40.566 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:20:40.615 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:20:40.615 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 589 ms
-2023-05-18 17:20:40.741 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:20:40.741 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:20:40.833 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:20:41.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 17:20:41.044 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1422,7 +1422,7 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:23:15.274 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
 2023-05-18 17:23:18.856 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 12308 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
 2023-05-18 17:23:18.858 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-05-18 17:23:19.194 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.CharaMapper' mapperInterface. Bean already defined with the same name!
+2023-05-18 17:23:19.194 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'charaMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:23:19.194 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
 2023-05-18 17:23:19.195 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
 2023-05-18 17:23:19.419 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
@@ -1431,7 +1431,7 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:23:19.426 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-05-18 17:23:19.474 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
 2023-05-18 17:23:19.474 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 591 ms
-2023-05-18 17:23:19.588 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Chara"
+2023-05-18 17:23:19.588 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
 2023-05-18 17:23:19.681 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
 2023-05-18 17:23:19.888 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
 2023-05-18 17:23:19.899 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
@@ -1448,3 +1448,470 @@ java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2023-05-18 17:23:24.985 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
 2023-05-18 17:23:42.873 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
 2023-05-18 17:23:42.877 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-19 14:20:16.897 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 9816 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-19 14:20:16.899 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-19 14:20:17.321 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'pageMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 14:20:17.321 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 14:20:17.321 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-19 14:20:17.558 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-19 14:20:17.565 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-19 14:20:17.565 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-19 14:20:17.565 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19 14:20:17.613 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-19 14:20:17.615 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 688 ms
+2023-05-19 14:20:17.733 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
+2023-05-19 14:20:17.841 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-19 14:20:18.057 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-19 14:20:18.067 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-19 14:20:18.074 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.505 seconds (process running for 1.898)
+2023-05-19 14:20:18.075 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-19 14:20:18.075 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-19 14:20:41.522 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19 14:20:41.523 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-19 14:20:41.523 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-05-19 14:20:41.536 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-05-19 14:25:30.937 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+java.lang.IllegalStateException: Type handler was null on parameter mapping for property 'history'. It was either not specified and/or could not be found for the javaType (java.util.Map) : jdbcType (null) combination.
+	at org.apache.ibatis.mapping.ParameterMapping$Builder.validate(ParameterMapping.java:119)
+	at org.apache.ibatis.mapping.ParameterMapping$Builder.build(ParameterMapping.java:104)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:143)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:87)
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77)
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:50)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:42)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:305)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:41)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:690)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy82.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy72.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.controller.PageController.add(PageController.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-19 14:56:49.567 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 13516 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-19 14:56:49.569 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-19 14:56:49.918 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'pageMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 14:56:49.918 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 14:56:49.918 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-19 14:56:50.131 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-19 14:56:50.137 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-19 14:56:50.139 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-19 14:56:50.139 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19 14:56:50.192 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-19 14:56:50.192 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 598 ms
+2023-05-19 14:56:50.313 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
+2023-05-19 14:56:50.407 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-19 14:56:50.600 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-19 14:56:50.611 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-19 14:56:50.616 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.341 seconds (process running for 1.655)
+2023-05-19 14:56:50.618 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-19 14:56:50.618 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-19 14:56:54.028 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19 14:56:54.028 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-19 14:56:54.029 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-19 14:56:54.112 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+java.lang.IllegalStateException: Type handler was null on parameter mapping for property 'mainCharacter'. It was either not specified and/or could not be found for the javaType (com.solaluna.wiki.pojo.page.Chara) : jdbcType (null) combination.
+	at org.apache.ibatis.mapping.ParameterMapping$Builder.validate(ParameterMapping.java:119)
+	at org.apache.ibatis.mapping.ParameterMapping$Builder.build(ParameterMapping.java:104)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:143)
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:87)
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77)
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:50)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:42)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:305)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:41)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:690)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.controller.PageController.add(PageController.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-19 17:34:28.055 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 24084 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-19 17:34:28.057 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-19 17:34:28.485 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'pageMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 17:34:28.485 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 17:34:28.486 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-19 17:34:28.707 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-19 17:34:28.714 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-19 17:34:28.715 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-19 17:34:28.716 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19 17:34:28.769 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-19 17:34:28.770 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 685 ms
+2023-05-19 17:34:28.890 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
+2023-05-19 17:34:28.984 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-19 17:34:29.195 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-19 17:34:29.205 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-19 17:34:29.211 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.475 seconds (process running for 1.855)
+2023-05-19 17:34:29.212 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-19 17:34:29.213 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-19 17:34:58.772 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19 17:34:58.773 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-19 17:34:58.776 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-19 17:34:58.915 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-19 17:34:58.916 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-19 17:34:59.208 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@20dd78c9
+2023-05-19 17:34:59.210 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-19 17:34:59.292 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'title' in 'field list'
+### The error may exist in com/solaluna/wiki/mapper/PageMapper.java (best guess)
+### The error may involve com.solaluna.wiki.mapper.PageMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO chara  ( id, title, brief, background, history, main_character, relatives, team )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'title' in 'field list'
+; bad SQL grammar []] with root cause
+java.sql.SQLSyntaxErrorException: Unknown column 'title' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy84.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.controller.PageController.add(PageController.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-19 17:37:38.238 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-19 17:37:38.242 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
+2023-05-19 17:37:41.590 INFO  com.solaluna.wiki.WikiApplication                 :51   [32m                  [0;39m Starting WikiApplication using Java 19.0.2 with PID 11860 (C:\Users\41572\Desktop\1\git\wiki\wiki\target\classes started by 41572 in C:\Users\41572\Desktop\1\git\wiki)
+2023-05-19 17:37:41.592 INFO  com.solaluna.wiki.WikiApplication                 :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-19 17:37:41.943 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'pageMapper' and 'com.solaluna.wiki.mapper.PageMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 17:37:41.943 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.solaluna.wiki.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2023-05-19 17:37:41.943 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.solaluna.wiki.mapper]' package. Please check your configuration.
+2023-05-19 17:37:42.163 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2023-05-19 17:37:42.170 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-19 17:37:42.171 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-19 17:37:42.171 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19 17:37:42.220 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-19 17:37:42.220 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 603 ms
+2023-05-19 17:37:42.341 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.page.Page"
+2023-05-19 17:37:42.436 WARN  c.b.mybatisplus.core.metadata.TableInfoHelper     :428  [32m                  [0;39m This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.solaluna.wiki.pojo.user.User"
+2023-05-19 17:37:42.641 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2023-05-19 17:37:42.651 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-19 17:37:42.657 INFO  com.solaluna.wiki.WikiApplication                 :57   [32m                  [0;39m Started WikiApplication in 1.357 seconds (process running for 1.667)
+2023-05-19 17:37:42.658 INFO  com.solaluna.wiki.WikiApplication                 :19   [32m                  [0;39m 启动成功！
+2023-05-19 17:37:42.658 INFO  com.solaluna.wiki.WikiApplication                 :20   [32m                  [0;39m 地址:	http://127.0.0.1:8088
+2023-05-19 17:37:46.682 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19 17:37:46.683 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-19 17:37:46.683 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-05-19 17:37:46.768 WARN  com.zaxxer.hikari.HikariConfig                    :1089 [32m                  [0;39m MyHikariPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-05-19 17:37:46.768 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m MyHikariPool - Starting...
+2023-05-19 17:37:46.936 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m MyHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@52fe64fd
+2023-05-19 17:37:46.938 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m MyHikariPool - Start completed.
+2023-05-19 17:37:46.985 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'history' in 'field list'
+### The error may exist in com/solaluna/wiki/mapper/PageMapper.java (best guess)
+### The error may involve com.solaluna.wiki.mapper.PageMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO page  ( id, title, brief, background, history, main_character, relatives, team )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'history' in 'field list'
+; bad SQL grammar []] with root cause
+java.sql.SQLSyntaxErrorException: Unknown column 'history' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy84.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.solaluna.wiki.service.impl.PageServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.solaluna.wiki.controller.PageController.add(PageController.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-05-19 17:43:01.006 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m MyHikariPool - Shutdown initiated...
+2023-05-19 17:43:01.012 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m MyHikariPool - Shutdown completed.
