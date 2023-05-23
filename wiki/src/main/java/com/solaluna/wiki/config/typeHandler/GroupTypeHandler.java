@@ -3,12 +3,13 @@ package com.solaluna.wiki.config.typeHandler;
 import com.solaluna.wiki.pojo.page.Group;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
+import org.apache.ibatis.type.MappedTypes;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+@MappedTypes(Group.class)
 public class GroupTypeHandler extends BaseTypeHandler<Group> {
 
     @Override
@@ -34,13 +35,11 @@ public class GroupTypeHandler extends BaseTypeHandler<Group> {
         return convertStringToGroup(res);
     }
     public String convertGroupToString(Group group) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(group.getChara())
-                .append(":")
-                .append(group.getGrade())
-                .append(":")
-                .append(group.getGroup());
-        return sb.toString();
+        return group.getChara() +
+                ":" +
+                group.getGrade() +
+                ":" +
+                group.getGroup();
     }
 
     public Group convertStringToGroup(String str) {

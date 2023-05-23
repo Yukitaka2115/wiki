@@ -15,6 +15,5 @@ public class Group {
     private String group;
 
     public Group(String chara, String grade, String group) {
-
     }
 }

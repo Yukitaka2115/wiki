@@ -3,12 +3,13 @@ package com.solaluna.wiki.config.typeHandler;
 import com.solaluna.wiki.pojo.page.Chara;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
+import org.apache.ibatis.type.MappedTypes;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+@MappedTypes(Chara.class)
 public class CharaTypeHandler extends BaseTypeHandler<Chara> {
     @Override
     public void setNonNullParameter(PreparedStatement ps, int i, Chara chara, JdbcType jdbcType) throws SQLException {
@@ -36,13 +37,11 @@ public class CharaTypeHandler extends BaseTypeHandler<Chara> {
 
 
     public String convertCharaToString(Chara chara) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(chara.getChara())
-                .append(":")
-                .append(chara.getCast())
-                .append(":")
-                .append(chara.getInfo());
-        return sb.toString();
+        return chara.getChara() +
+                ":" +
+                chara.getCast() +
+                ":" +
+                chara.getInfo();
     }
 
     public Chara convertStringToChara(String str) {

@@ -22,7 +22,7 @@ public class Page {
     @TableField(typeHandler = MapTypeHandler.class)
     public Map<String,String> history;
     @TableField(typeHandler = CharaTypeHandler.class)
-    public Chara mainCharacter;
+    public Chara mainChara;
     @TableField(typeHandler = CharaTypeHandler.class)
     public Chara relatives;
     @TableField(typeHandler = GroupTypeHandler.class)

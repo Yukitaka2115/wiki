@@ -25,7 +25,7 @@ public class PageController {
         String brief = pageParam.getBrief();
         String background = pageParam.getBackground();
         Map<String, String> history = pageParam.getHistory();
-        Chara mainCharacter = pageParam.getMainCharacter();
+        Chara mainCharacter = pageParam.getMainChara();
         Chara relatives = pageParam.getRelatives();
         Group team = pageParam.getTeam();
         Page page = new Page();
@@ -33,7 +33,7 @@ public class PageController {
         page.setBrief(brief);
         page.setBackground(background);
         page.setHistory(history);
-        page.setMainCharacter(mainCharacter);
+        page.setMainChara(mainCharacter);
         page.setRelatives(relatives);
         page.setTeam(team);
         pageService.save(page);
@@ -56,7 +56,7 @@ public class PageController {
         page.setBrief(pageParam.getBrief());
         page.setBackground(pageParam.getBackground());
         page.setHistory(pageParam.getHistory());
-        page.setMainCharacter(pageParam.getMainCharacter());
+        page.setMainChara(pageParam.getMainChara());
         page.setRelatives(pageParam.getRelatives());
         page.setTeam(pageParam.getTeam());
         pageService.updateById(page);
