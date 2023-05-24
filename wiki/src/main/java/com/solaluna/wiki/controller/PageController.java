@@ -5,6 +5,7 @@ import com.solaluna.wiki.pojo.page.Chara;
 import com.solaluna.wiki.pojo.page.Group;
 import com.solaluna.wiki.pojo.page.Page;
 import com.solaluna.wiki.service.PageService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,6 +31,9 @@ public class PageController {
         System.out.println(mainChara);
         Chara relatives = pageParam.getRelatives();
         Group team = pageParam.getTeam();
+        if (StringUtils.isBlank((CharSequence) pageParam)){
+            return Result.error("空白");
+        }
         Page page = new Page();
         page.setTitle(title);
         page.setBrief(brief);

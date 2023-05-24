@@ -23,4 +23,5 @@ public class Result {
     public static Result fail(int code, String msg) {
         return new Result(code, msg, null);
     }
+    public static Result error(String msg){return new Result(600,msg,null);}
 }
