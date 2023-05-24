@@ -17,7 +17,6 @@ public class PageController {
     @Autowired
     PageService pageService;
 
-
     @GetMapping("/page/test")
     public String test(){return "114514";}
 
@@ -44,7 +43,7 @@ public class PageController {
         page.setTeam(team);
         pageService.save(page);
         return Result.success(page);
-    }//1，2
+    }//1,2,3
 
     @DeleteMapping("/page/deletePage")
     public Result delete(@RequestParam("id") int id){
