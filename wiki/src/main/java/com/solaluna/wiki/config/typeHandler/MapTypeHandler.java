@@ -16,7 +16,8 @@ public class MapTypeHandler extends BaseTypeHandler<Map<String, String>> {
         // 将 Map 类型的参数转换为合适的数据库类型并设置到 PreparedStatement 中
         // 这里可以根据具体数据库的类型选择适当的转换方法
         // 例如，可以将 Map 转换为 JSON 字符串存储到对应的 VARCHAR 字段中
-         ps.setString(i, convertMapToString(parameter));
+        ps.setString(i, convertMapToString(parameter));
+        System.out.println(ps);
     }
 
     @Override
@@ -24,8 +25,9 @@ public class MapTypeHandler extends BaseTypeHandler<Map<String, String>> {
         // 从 ResultSet 中获取指定列名的值，并将其转换为 Map 类型
         // 这里可以根据具体数据库的类型选择适当的转换方法
         // 例如，可以将存储为 JSON 字符串的字段值转换为 Map 对象
-         String json = rs.getString(columnName);
-         return convertStringToMap(json);
+        String json = rs.getString(columnName);
+        System.out.println(json);
+        return convertStringToMap(json);
     }
 
     @Override
@@ -33,8 +35,9 @@ public class MapTypeHandler extends BaseTypeHandler<Map<String, String>> {
         // 从 ResultSet 中获取指定列索引的值，并将其转换为 Map 类型
         // 这里可以根据具体数据库的类型选择适当的转换方法
         // 例如，可以将存储为 JSON 字符串的字段值转换为 Map 对象
-         String json = rs.getString(columnIndex);
-         return convertStringToMap(json);
+        String json = rs.getString(columnIndex);
+        System.out.println(json);
+        return convertStringToMap(json);
     }
 
     @Override
@@ -42,8 +45,9 @@ public class MapTypeHandler extends BaseTypeHandler<Map<String, String>> {
         // 从 CallableStatement 中获取指定列索引的值，并将其转换为 Map 类型
         // 这里可以根据具体数据库的类型选择适当的转换方法
         // 例如，可以将存储为 JSON 字符串的字段值转换为 Map 对象
-         String json = cs.getString(columnIndex);
-         return convertStringToMap(json);
+        String json = cs.getString(columnIndex);
+        System.out.println(json);
+        return convertStringToMap(json);
     }
 
     // 根据需要编写 Map 和 JSON 之间的转换方法
