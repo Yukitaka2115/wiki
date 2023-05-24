@@ -14,23 +14,27 @@ public class CharaTypeHandler extends BaseTypeHandler<Chara> {
     @Override
     public void setNonNullParameter(PreparedStatement ps, int i, Chara chara, JdbcType jdbcType) throws SQLException {
         ps.setString(i, convertCharaToString(chara));
+        System.out.println("ps ="+ps);
     }
 
     @Override
     public Chara getNullableResult(ResultSet rs, String s) throws SQLException {
         String res = rs.getString(s);
+        System.out.println("res = "+res);
         return convertStringToChara(res);
     }
 
     @Override
     public Chara getNullableResult(ResultSet rs, int i) throws SQLException {
         String res = rs.getString(i);
+        System.out.println("res = "+res);
         return convertStringToChara(res);
     }
 
     @Override
     public Chara getNullableResult(CallableStatement cs, int i) throws SQLException {
         String res = cs.getString(i);
+        System.out.println("res = "+res);
         return convertStringToChara(res);
     }
 
