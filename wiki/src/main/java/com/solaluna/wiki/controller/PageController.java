@@ -1,7 +1,6 @@
 package com.solaluna.wiki.controller;
 
 import com.solaluna.wiki.pojo.Result;
-import com.solaluna.wiki.pojo.info.EditHistory;
 import com.solaluna.wiki.pojo.page.Chara;
 import com.solaluna.wiki.pojo.page.Group;
 import com.solaluna.wiki.pojo.page.Page;
@@ -14,7 +13,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.sql.Timestamp;
 import java.util.Map;
 
 @RestController
@@ -57,13 +55,13 @@ public class PageController {
     }//1,2
 
     @PutMapping("/page/editPage")
-    public Result update(@RequestParam("id") int id, @RequestBody Page pageParam, HttpServletRequest req){
+    public Result update(@RequestParam("id") int id, @RequestBody Page pageParam , HttpServletRequest req){
         Page page = pageService.getById(id);
         if(page == null){
             return Result.fail(406,"查询失败");
         }
         //执行页面编辑与更新操作
-        page.setId(id);
+        page.setId(page.getId());
         page.setTitle(pageParam.getTitle());
         page.setBrief(pageParam.getBrief());
         page.setBackground(pageParam.getBackground());
@@ -72,26 +70,18 @@ public class PageController {
         page.setRelatives(pageParam.getRelatives());
         page.setTeam(pageParam.getTeam());
         boolean updated = pageService.updateById(page);
-        if (updated) {
+        if (updated) {//目前没法测试这个功能，等前端
             // 添加编辑历史记录
-            String token = req.getHeader("Authorization");
+            String token;
+            token = req.getHeader("Authorization");
             String jwtSecret = "Yukitaka1116"; // 替换为你的 JWT 密钥
-
             // 解析 JWT Token
             Claims claims = Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token).getBody();
-
             // 从 claims 中获取用户名
             String username = claims.getSubject();
-
             User editor = new User();
             editor.setUsername(username);
-
-            EditHistory editHistory = new EditHistory();
-            editHistory.setEditTime(new Timestamp(System.currentTimeMillis()));
-            editHistory.setEditorName(editor.getUsername());
-            editHistory.setEditedPageId(id);
-            editHistoryService.save(editHistory);
-
+            editHistoryService.saveEditHistory(username,page.getId());
             return Result.success("更新成功", page);
         } else {
             return Result.fail(407, "更新失败");
