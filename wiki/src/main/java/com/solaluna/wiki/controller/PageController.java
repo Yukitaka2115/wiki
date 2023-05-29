@@ -1,14 +1,20 @@
 package com.solaluna.wiki.controller;
 
 import com.solaluna.wiki.pojo.Result;
+import com.solaluna.wiki.pojo.info.EditHistory;
 import com.solaluna.wiki.pojo.page.Chara;
 import com.solaluna.wiki.pojo.page.Group;
 import com.solaluna.wiki.pojo.page.Page;
+import com.solaluna.wiki.pojo.user.User;
+import com.solaluna.wiki.service.EditHistoryService;
 import com.solaluna.wiki.service.PageService;
-import org.apache.commons.lang3.StringUtils;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Timestamp;
 import java.util.Map;
 
 @RestController
@@ -16,6 +22,8 @@ public class PageController {
 
     @Autowired
     PageService pageService;
+    @Autowired
+    EditHistoryService editHistoryService;
 
     @GetMapping("/page/test")
     public String test(){return "114514";}
@@ -27,12 +35,8 @@ public class PageController {
         String background = pageParam.getBackground();
         Map<String, String> history = pageParam.getHistory();
         Chara mainChara = pageParam.getMainchara();
-        System.out.println(mainChara);
         Chara relatives = pageParam.getRelatives();
         Group team = pageParam.getTeam();
-        if (StringUtils.isBlank((CharSequence) pageParam)){
-            return Result.error("空白");
-        }
         Page page = new Page();
         page.setTitle(title);
         page.setBrief(brief);
@@ -44,6 +48,7 @@ public class PageController {
         pageService.save(page);
         return Result.success(page);
     }//1,2,3
+    //还有一个判空，过一阵再写
 
     @DeleteMapping("/page/deletePage")
     public Result delete(@RequestParam("id") int id){
@@ -52,11 +57,13 @@ public class PageController {
     }//1,2
 
     @PutMapping("/page/editPage")
-    public Result update(@RequestParam("id") int id, @RequestBody Page pageParam){
+    public Result update(@RequestParam("id") int id, @RequestBody Page pageParam, HttpServletRequest req){
         Page page = pageService.getById(id);
         if(page == null){
             return Result.fail(406,"查询失败");
         }
+        //执行页面编辑与更新操作
+        page.setId(id);
         page.setTitle(pageParam.getTitle());
         page.setBrief(pageParam.getBrief());
         page.setBackground(pageParam.getBackground());
@@ -64,8 +71,31 @@ public class PageController {
         page.setMainchara(pageParam.getMainchara());
         page.setRelatives(pageParam.getRelatives());
         page.setTeam(pageParam.getTeam());
-        pageService.updateById(page);
-        return Result.success("更新成功", page);
+        boolean updated = pageService.updateById(page);
+        if (updated) {
+            // 添加编辑历史记录
+            String token = req.getHeader("Authorization");
+            String jwtSecret = "Yukitaka1116"; // 替换为你的 JWT 密钥
+
+            // 解析 JWT Token
+            Claims claims = Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token).getBody();
+
+            // 从 claims 中获取用户名
+            String username = claims.getSubject();
+
+            User editor = new User();
+            editor.setUsername(username);
+
+            EditHistory editHistory = new EditHistory();
+            editHistory.setEditTime(new Timestamp(System.currentTimeMillis()));
+            editHistory.setEditorName(editor.getUsername());
+            editHistory.setEditedPageId(id);
+            editHistoryService.save(editHistory);
+
+            return Result.success("更新成功", page);
+        } else {
+            return Result.fail(407, "更新失败");
+        }
     }//1,2
 
     @GetMapping("/{title}")
