@@ -6,4 +6,5 @@ import lombok.Data;
 public class LoginParams {
     String username;
     String pwd;
+    int userRole;
 }

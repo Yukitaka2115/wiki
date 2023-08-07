@@ -10,6 +10,7 @@ import lombok.Data;
 public class User {
     @TableId(type = IdType.AUTO)
     public int id;
+    public int role;
     public String username;
     public String pwd;
 }

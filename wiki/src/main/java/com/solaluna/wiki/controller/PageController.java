@@ -15,19 +15,21 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-@RestController
+@RestController("/page")
 public class PageController {
-
     @Autowired
     PageService pageService;
     @Autowired
     EditHistoryService editHistoryService;
 
-    @GetMapping("/page/test")
+    @GetMapping("/test")
     public String test(){return "114514";}
 
-    @PostMapping("/page/addPage")
+    @PostMapping("/addPage")//外链跟其他的活动之类的功能没写
     public Result add(@RequestBody Page pageParam){
+        if(pageParam == null){
+            return Result.fail(400,"输入内容为空");
+        }//判空
         String title = pageParam.getTitle();
         String brief = pageParam.getBrief();
         String background = pageParam.getBackground();
@@ -46,22 +48,21 @@ public class PageController {
         pageService.save(page);
         return Result.success(page);
     }//1,2,3
-    //还有一个判空，过一阵再写
 
-    @DeleteMapping("/page/deletePage")
+    @DeleteMapping("/deletePage")
     public Result delete(@RequestParam("id") int id){
         pageService.removeById(id);
         return Result.success("删除成功",id);
     }//1,2
 
-    @PutMapping("/page/editPage")
+    @PutMapping("/editPage")
     public Result update(@RequestParam("id") int id, @RequestBody Page pageParam , HttpServletRequest req){
         Page page = pageService.getById(id);
         if(page == null){
             return Result.fail(406,"查询失败");
         }
         //执行页面编辑与更新操作
-        page.setId(page.getId());
+        page.setId(pageParam.getId());
         page.setTitle(pageParam.getTitle());
         page.setBrief(pageParam.getBrief());
         page.setBackground(pageParam.getBackground());
@@ -69,6 +70,10 @@ public class PageController {
         page.setMainchara(pageParam.getMainchara());
         page.setRelatives(pageParam.getRelatives());
         page.setTeam(pageParam.getTeam());
+//        //判空
+//        if(pageParam == null){
+//            return Result.fail(406,"内容为空");
+//        }//这个判空为什么会一直为null？
         boolean updated = pageService.updateById(page);
         if (updated) {//目前没法测试这个功能，等前端
             // 添加编辑历史记录
@@ -91,9 +96,9 @@ public class PageController {
     @GetMapping("/{title}")
     public Result get(@PathVariable("title") String title) { //@PathVariable 跟 @RequestParam 区别
         /*
-        * @PathVariable 用于获取路径中的占位符参数值，例如 /users/{userId}。
-        * @RequestParam 用于获取请求中的查询参数值，例如 /users?id=123。
-        */
+         * @PathVariable 用于获取路径中的占位符参数值，例如 /users/{userId}。
+         * @RequestParam 用于获取请求中的查询参数值，例如 /users?id=123。
+         */
         Page page = pageService.getByTitle(title);
         if (page == null) {
             return Result.fail(406, "数据不存在");
