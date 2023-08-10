@@ -9,6 +9,7 @@ import com.solaluna.wiki.service.EditHistoryService;
 import com.solaluna.wiki.service.PageService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +25,7 @@ public class PageController {
 
     @GetMapping("/test")
     public String test(){return "114514";}
-
+    @Operation(summary = "新增页面")
     @PostMapping("/addPage")//外链跟其他的活动之类的功能没写
     public Result add(@RequestBody Page pageParam){
         if(pageParam == null){
