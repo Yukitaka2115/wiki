@@ -21,7 +21,7 @@ public class SwaggerConfig {
 
     private Info apiInfo() {
         return new Info()
-                .title("Wen3 Demo API Doc")
+                .title("Wiki Demo API Doc")
                 .description("springfox swagger 3.0 demo")
                 .version("1.0.0")
                 .contact(new Contact()
