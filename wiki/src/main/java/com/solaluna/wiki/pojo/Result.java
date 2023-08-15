@@ -1,12 +1,16 @@
 package com.solaluna.wiki.pojo;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
+@Schema(name="返回类型参数")
 public class Result {
-
+    @Schema(name="返回代码")
     private int code;
+    @Schema(name="返回信息")
     private String msg;
+    @Schema(name="返回数据")
     private Object data;
     public Result(int code, String msg, Object data) {
         this.code = code;

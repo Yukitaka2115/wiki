@@ -10,6 +10,7 @@ import com.solaluna.wiki.service.PageService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController("/page")
+@Tag(name="页面控制器")
 public class PageController {
     @Autowired
     PageService pageService;
@@ -24,7 +26,10 @@ public class PageController {
     EditHistoryService editHistoryService;
 
     @GetMapping("/test")
-    public String test(){return "114514";}
+    @Operation(summary = "测试接口")
+    public String test(){
+        return "114514";
+    }
     @Operation(summary = "新增页面")
     @PostMapping("/addPage")//外链跟其他的活动之类的功能没写
     public Result add(@RequestBody Page pageParam){
@@ -50,12 +55,14 @@ public class PageController {
         return Result.success(page);
     }//1,2,3
 
+    @Operation(summary = "删除页面")
     @DeleteMapping("/deletePage")
     public Result delete(@RequestParam("id") int id){
         pageService.removeById(id);
         return Result.success("删除成功",id);
     }//1,2
 
+    @Operation(summary = "修改页面")
     @PutMapping("/editPage")
     public Result update(@RequestParam("id") int id, @RequestBody Page pageParam , HttpServletRequest req){
         Page page = pageService.getById(id);
@@ -94,6 +101,7 @@ public class PageController {
         }
     }//1,2
 
+    @Operation(summary = "获取页面")
     @GetMapping("/{title}")
     public Result get(@PathVariable("title") String title) { //@PathVariable 跟 @RequestParam 区别
         /*

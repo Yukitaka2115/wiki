@@ -8,6 +8,8 @@ import com.solaluna.wiki.pojo.util.JwtUtils;
 import com.solaluna.wiki.pojo.util.params.LoginParams;
 import com.solaluna.wiki.pojo.util.params.RegisterParams;
 import com.solaluna.wiki.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,16 +18,19 @@ import org.springframework.web.bind.annotation.*;
  * @author 41572
  */
 @RestController
+@Tag(name="用户控制器")
 public class UserController {
     @Autowired
     UserService userService;
     @Autowired
     JwtUtils jwtUtil;
     @GetMapping("/user/test")
+    @Operation(summary = "test")
     public Result test(){
         return Result.success("114514");
     }
     @PostMapping("/user/register")
+    @Operation(summary = "注册")
     public Result register(@RequestBody RegisterParams registerParams){
         String username = registerParams.getUsername();
         String pwd = registerParams.getPwd();
@@ -48,6 +53,7 @@ public class UserController {
     }//1
 
     @PostMapping("/user/login")
+    @Operation(summary = "登录")
     public Result login(@RequestBody LoginParams loginParams){
         String username = loginParams.getUsername();
         String pwd = loginParams.getPwd();
@@ -67,6 +73,7 @@ public class UserController {
     }//1
 
     @PostMapping("/comment")
+    @Operation(summary = "解析评论的用户类型以及权限")
     public Result addComment(@RequestBody Comment comment, @RequestHeader("Authorization") String token) {
         // 解析 JWT 获取用户名和角色
         String username = JwtUtils.getUsernameFromToken(token);
