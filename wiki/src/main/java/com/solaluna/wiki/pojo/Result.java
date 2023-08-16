@@ -7,7 +7,7 @@ import lombok.Data;
 @Schema(name="返回类型参数")
 public class Result {
     @Schema(name="返回代码")
-    private int code;
+    private Integer code;
     @Schema(name="返回信息")
     private String msg;
     @Schema(name="返回数据")

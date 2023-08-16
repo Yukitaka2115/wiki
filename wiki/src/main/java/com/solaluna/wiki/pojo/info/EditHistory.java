@@ -9,11 +9,11 @@ import java.sql.Timestamp;
 @TableName("edithistory")
 public class EditHistory {
     @TableId(type = IdType.AUTO)
-    public int id;
+    public Integer id;
     @TableField(fill = FieldFill.INSERT)
     public Timestamp editTime;
     @TableField("editor_name")
     public String editorName;
     @TableField("editPage_id")
-    public int editedPageId;
+    public Integer editedPageId;
 }

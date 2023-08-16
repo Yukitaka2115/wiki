@@ -17,15 +17,15 @@ import java.sql.Timestamp;
 public class Comment {
     @TableId(type = IdType.AUTO)
     @Schema(name="主键")
-    public int id;
+    public Integer id;
     @Schema(name="页面ID")
-    public int page_id;
+    public Integer page_id;
     @Schema(name="用户ID")
-    public int user_id;
+    public Integer user_id;
     @Schema(name="评论")
     public String comment;
     @Schema(name="评论时间")
     public Timestamp time;
     @Schema(name="用户角色")
-    public int user_role;
+    public Integer user_role;
 }

@@ -12,9 +12,9 @@ import lombok.Data;
 public class User {
     @TableId(type = IdType.AUTO)
     @Schema(name="用户ID，表主键")
-    public int id;
+    public Integer id;
     @Schema(name="用户类型：0普通，1管理员")
-    public int role;
+    public Integer role;
     @Schema(name="用户名")
     public String username;
     @Schema(name="密码")

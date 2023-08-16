@@ -18,7 +18,7 @@ import java.util.Map;
 public class Page {
     @TableId(type = IdType.AUTO)
     @Schema(name="主键")
-    public int id;
+    public Integer id;
     @Schema(name="标题")
     public String title;
     @Schema(name="简介")

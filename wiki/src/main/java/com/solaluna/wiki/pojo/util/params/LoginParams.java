@@ -11,5 +11,5 @@ public class LoginParams {
     @Schema(name="密码")
     String pwd;
     @Schema(name="用户类型")
-    int userRole;
+    Integer userRole;
 }
